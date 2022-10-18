@@ -10,3 +10,10 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "please tell me your stores name"
+
+store_name = $stdin.gets.chomp
+
+store_name = Store.new
+
+store_name.save!
