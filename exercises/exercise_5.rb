@@ -8,3 +8,13 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+total = Store.sum(:annual_revenue)
+pp "total = #{total}"
+
+average = Store.average(:annual_revenue)
+pp "average = #{average}"
+
+m =Store.where("annual_revenue > ?", 1000000).size
+
+puts "more than 1M #{m}"
